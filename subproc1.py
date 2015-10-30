@@ -6,6 +6,7 @@
 # 1)  https://docs.python.org/2/library/subprocess.html
 #
 import subprocess
+import os
 
 print "subproc1.py:  more ways of running external pgms and consuming data"
 
@@ -34,6 +35,32 @@ try:
     print
 except Exception, e:
     print "Exception , e=", e
+
+# test with redirection
+print "Using call w/ redirection and exception w/ else"
+
+# do the ls -l with redirection to F
+F="lsl.dat"
+CMD="ls -l >"+F
+try:
+    os.system(CMD)
+except: 
+    print "System error"
+else: 
+    print "Ran ", CMD
+
+cnt=0
+try:
+    f = open(F)
+    for line in f:
+        # print line,
+        cnt=cnt+1
+    f.close()
+    #print "Count=",cnt
+except:
+    print "Exception File error"
+else:
+     print "No exception, Count=",cnt
 
 print "Done!"
 
