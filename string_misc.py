@@ -49,6 +49,7 @@ print "raw strings start with r\""
 rstr=r"C:\somepath\i\am\a\virus.exe"
 print "raw string=\"%s\"" % rstr
 
+# multi-line string starting with """, ending with """
 print "multi-line string"
 mlstr="""This is a very long
 and multi-line string and is a test of using
@@ -56,3 +57,16 @@ the special \"\"\" operator on it.
 
 This is the end...."""
 print "long string=\"%s\"" % mlstr
+
+# long raw string starting with r", ending with "
+print "long, raw string"
+mlstr1=r"This is a test\
+of a long raw string\
+  and some indents\
+  and some more"
+
+# concat the strings
+mlstr2 = mlstr + mlstr1
+print "long strings:  "
+print mlstr2
+
