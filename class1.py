@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Module:   class1.py
-# Purpose:  class test 
+# Purpose:  class test #1 -- very basic class syntax in Python 
 # Date:     N/A
 # Notes:    
 # 1)  Test python code
@@ -39,6 +39,7 @@ class my_derived(my_base):
     print self.xname,
     my_base.xprint(self)
 
+
 # class derived from a standard class, complex
 class my_complex(complex):
 
@@ -59,7 +60,7 @@ class my_complex(complex):
 
 
 # main code 
-print "class1.py:  create a test class"
+print "class1.py:  test of Python classes #1"
 
 print "Test 1 of complex class "
 mc = my_complex(1,2)
@@ -75,5 +76,3 @@ print "added=", mb.add()
 print "Test 3 of derived class"
 md = my_derived('asdf', 1, 2, 4)
 md.xprint()
-
-
