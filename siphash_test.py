@@ -31,7 +31,7 @@ It includes multiple lines of text and all that stuff.\
 The siphash function is in pure Python. \
 End!"
 
-# siphash test function
+# siphash test function -- python implementation, slow
 def siphash_test_fcn():
     key = '0123456789ABCDEF' 
     sip = siphash.SipHash_2_4(key)
@@ -39,7 +39,7 @@ def siphash_test_fcn():
     myhash=sip.hash()
     print "Key=%s Hash=%s" % (key, myhash)
 
-# md5hash test function
+# md5hash test function, C implementation, fast currently
 def md5hash_test_fcn():
     key = '0123456789ABCDEF' 
     m = hashlib.md5()
