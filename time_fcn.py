@@ -6,11 +6,11 @@
 # 1) This uses the time functions based on C libs and functions.
 #    For more features and OOP it is recommended to use datetime.
 
-print "UNIX time functions based on C lib"
+print "time_fcn.py:  time tests, UNIX time functions based on C lib"
 import time as t
 
 mt=t.time()
-print "UNIX time=", mt
+print "UNIX time now=", mt
 
 tg=t.gmtime()
 tl=t.localtime()
@@ -20,9 +20,17 @@ print "  gmtime, localtime='\n  ", tg, '\n  ', tl
 
 print "Year is:  ", tl.tm_year
 
+# test Y2K 
 ttest=(2000,12,31,23,59,59,0,0,0)
 tm=t.mktime(ttest)
 print "Y2K-1s=", ttest,' tm=', tm
+
+# make some time strings
+ltime="%04d/%02d/%02d %02d:%02d" % (tl.tm_year, tl.tm_mon, tl.tm_mday, 
+                                 tl.tm_hour, tl.tm_min)
+
+st=t.strftime("%Y/%m/%d %H:%M %Z", tl)
+print("Local time=%s or from strftime=%s") % (ltime, st)
 
 import math as m
 MR=100000
