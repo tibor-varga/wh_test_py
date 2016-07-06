@@ -8,6 +8,7 @@
 import subprocess
 
 print "Cleaning up test files"
+subprocess.call('rm -f *.bin', shell=True)
 subprocess.call('rm -f *.css', shell=True)
 subprocess.call('rm -f *.dat', shell=True)
 subprocess.call('rm -f *.db', shell=True)
