@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # Module:   entropy.py
-# Purpose:  compute entropy of a group of bytes
+# Purpose:  compute Shannon entropy of a blocks of bytes
 # Date:     N/A
 # Notes:
-# 1) ...
-# Ref:
+# 1) This is based on code from several threads on StackOverflow
+#    and may be used to compute the Shannon entropy in the range
+#    of 0..1 for a block of bytes using Python.  For example, this
+#    may be used to compute where events occur in a stream or file.
+# 2) Ref:
 #  http://stackoverflow.com/questions/990477/how-to-calculate-the-entropy-of-a-file
+# Other notes:  http://libdisorder.freshdefense.net/
+# and:  http://blog.dkbza.org/2007/05/scanning-data-for-entropy-anomalies.html
 #
 """Compute Shannon Entropy of blocks of bytes"""
 
