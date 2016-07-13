@@ -6,6 +6,7 @@
 # 1) tbd
 # Ref:  
 #   https://docs.python.org/2/tutorial/inputoutput.html
+#   https://docs.python.org/2/library/string.html
 #   http://stackoverflow.com/questions/275018/how-can-i-remove-chomp-a-newline-in-python
 #
 import os
@@ -44,6 +45,8 @@ ii=1
 for fi_line in fi:
     # equivalent to Perl's chomp(), remove newline
     # -- for UNIX, can just use rstrip('\n')
+    # -- can use w/o arg and it will strip all whitespace chars inc. space
+    #    new_line = old_line.rstrip()
     fi_line=fi_line.rstrip('\r\n')
     # formatted print
     print "%3d:  %s" % (ii, fi_line)
