@@ -1,7 +1,7 @@
 WH Test Python Repository -- Python test files
 ==============================================
 Wade Hampton <wadehamptoniv@gmail.com>
-10.0, 4/6/2016: updated, readme cleanup
+10.1, 12/21/2017: updated, readme cleanup
 
 Summary:
 --------
@@ -42,6 +42,8 @@ History:
 
   04/06/2016  updated, readme cleanup 
 
+  12/21/2017  updated, more examples
+
 Notes:
 ------
 
@@ -71,8 +73,11 @@ Some Links:
 
 3.  Numpy, SciPY, Matplotlib, and other tools:  http://www.scipy.org/
 
-4.  Misc Tutorials:
+4.  AsciiDoc:  http://asciidoc.org/
+
+5.  Misc Tutorials:
 
 *   http://www.learnpython.org/
 *   http://www.tutorialspoint.com/python/
 *   http://knuth.luther.edu/~leekent/CS2Plus/genindex.html
+

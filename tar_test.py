@@ -9,8 +9,10 @@
 # 2) Python 3 supports lzma (xz) tar files, but Python 2
 #    only supports zip, gzip, and bz2.
 #
-TF="myfile.tgz"
-TYPE="w:gz"   # or w:bz2 or w:xz (
+# -- for compressed TAR
+#TF="myfile.tgz"
+#TYPE="w:gz"   # or w:bz2 or w:xz (
+TF="myfile.tar"
 TYPE="w"
 
 import tarfile
