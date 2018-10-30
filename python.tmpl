@@ -8,10 +8,15 @@
 #
 """Docstring for top-level"""
 
-def MNAME():
-    __doc__
-    print __doc__
+def some_func():
+    """some_func docstring goes here"""
     pass
 
+def mname_func():
+    """mname_func docstring goes here"""
+    print __doc__
+    # implement the main function here
+    some_func()
+
 if __name__ == "__main__":
-    MNAME()
+    mname_func()
